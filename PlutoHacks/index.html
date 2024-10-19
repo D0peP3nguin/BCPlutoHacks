@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Natural Disasters Overview</title>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
-    <div class="image-container">
-        <div class="placeholder left">Image 1</div>
-        <div class="placeholder right">Image 2</div>
-        <div class="placeholder left">Image 3</div>
-    </div>
-    <div class="button-container">
-        <button onclick="location.href='page1.html'">Go to Page 1</button>
-        <button onclick="location.href='page2.html'">Go to Page 2</button>
-        <button onclick="location.href='page3.html'">Go to Page 3</button>
+    <div class="content-container">
+        <div class="content-wrapper left">
+            <div class="image-wrapper"><img src="index images/tornado rubble.jpg" alt="Tornado Rubble"></div>
+            <div class="text-wrapper">
+                <h2>Tornado</h2>
+                <p>Tornadoes are dangerous wind columns formed from the most violent and dangerous of storms. Seek Shelter immediately</p>
+                <button onclick="location.href='page1.html'">Learn More</button>
+            </div>
+        </div>
+        <div class="content-wrapper right">
+            <div class="image-wrapper"><img src="index images/flooding.jpg" alt="Flood Image"></div>
+            <div class="text-wrapper">
+                <h2>Flooding & Flash Floods</h2>
+                <p>Flooding occurs when water levels rise to fill land that is typically dry. Flash floods are sudden and fast-moving, often triggered by heavy precipitation. Go to higher ground immediately</p>
+                <button onclick="location.href='page2.html'">Learn More!</button>
+            </div>
+        </div>
+        <div class="content-wrapper left">
+            <div class="image-wrapper"><img src="image3.jpg" alt="Hurricane Image"></div>
+            <div class="text-wrapper">
+                <h2>Hurricanes</h2>
+                <p>Hurricanes are large, powerful storms that form over warm ocean waters and can cause significant wind, rain, and flood damage when they make landfall. Evacuate Area If Possible!</p>
+                <button onclick="location.href='page3.html'">Learn More</button>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
