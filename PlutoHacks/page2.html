@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Flood Warning</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesp2.css">
 </head>
 <body>
     <header>
-        <h1>Flash Flood Warning</h1>
+        <h1>Flood and Flash Flood Warning</h1>
     </header>
     <main>
         <section>
-            <h2>What is a Flash Flood?</h2>
-            <p>A flash flood is a sudden and intense flood that occurs within six hours of heavy rainfall, dam or levee failure, or the sudden release of water.</p>
+            <h2>What is a Flood/Flash Flood?</h2>
+            <div class="image-container">
+                <div class="image-placeholder"><img src="index images/flashflood.jpg" alt="flashflood"></div>
+            </div>
+            <p>Flooding occurs when water levels rise to fill land that is typically dry. Flash floods are sudden and fast-moving, often triggered by heavy precipitation.</p>
         </section>
         <section>
             <h2>Precautions to Take</h2>
             <ul>
+                <li>Evacuate if possible</li>
                 <li>Move to higher ground immediately.</li>
                 <li>Avoid walking or driving through floodwaters.</li>
                 <li>Stay informed by monitoring weather updates.</li>
@@ -26,7 +30,8 @@
         </section>
         <section>
             <h2>What to Include in an Emergency Kit</h2>
-            <ul><li>Water: At least one gallon per person per day for at least three days.</li>
+            <ul>
+                <li>Water: At least one gallon per person per day for at least three days.</li>
                 <li>Food: Non-perishable food for at least three days.</li>
                 <li>First Aid Kit: Bandages, antiseptics, medications.</li>
                 <li>Flashlight and Extra Batteries: Essential for power outages.</li>
@@ -41,18 +46,26 @@
         </section>
         <section>
             <h2>During a Flash Flood</h2>
-            <p>Stay indoors and avoid contact with floodwater. If you are outdoors, seek higher ground immediately and avoid low-lying areas.</p>
+            <ul>
+                <li>Stay indoors and avoid contact with floodwater.</li>
+                <li>Seek higher ground immediately if you are outdoors.</li>
+                <li>Avoid low-lying areas.</li>
+                <li>Maintain contact with and follow instructions from local authorities.</li>
+                <li>Avoid bridges and low areas if outside.</li>
+                <li>Beware of objects that conduct electricity, including the water.</li>
+                <li>Watch out for damaged powerlines that may send direct current into the water.</li>
+            </ul>
+            
         </section>
         <section>
-            <button onclick="goToPage1()">Go to Page 1</button>
+            <button onclick="goToIndex()">Home</button>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Flash Flood Information Center</p>
+        <p>&copy; Byte Brigade&#8482;</p>
     </footer>
-
     <script>
-        function goToPage1() {
+        function goToIndex() {
             window.location.href = 'index.html';
         }
     </script>
