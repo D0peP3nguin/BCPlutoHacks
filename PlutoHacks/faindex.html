@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Techniques</title>
+    <link rel="stylesheet" href="stylesfa.css">
+</head>
+<body>
+    <header>
+        <h1>First Aid Techniques</h1>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="index.html">Disasters</a></li>
+                <li><a href="faindex.html">First Aid Techniques</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="content-wrapper left">
+            <div class="image-wrapper"><img src="index images/cpr.jpg" alt="CPR"></div>
+            <div class="text-wrapper">
+                <h2>CPR (Cardiopulmonary Resuscitation)</h2>
+                <p>CPR is a life-saving technique that’s used when someone's breathing or heartbeat has stopped. Ensure the airway is open and perform chest compressions.</p>
+                <button onclick="location.href='fapage1.html'">Learn More</button>
+            </div>
+        </div>
+        <div class="content-wrapper right">
+            <div class="image-wrapper"><img src="index images/splint.jpg" alt="splint"></div>
+            <div class="text-wrapper">
+                <h2>Splint</h2>
+                <p>A splint is a medical device that immobilizes and protects a body part that is injured or needs to be kept in place.</p>
+                <button onclick="location.href='fapage2.html'">Learn More</button>
+            </div>
+        </div>
+        <div class="content-wrapper left">
+            <div class="image-wrapper"><img src="index images/bleeding.jpg" alt="Bleeding"></div>
+            <div class="text-wrapper">
+                <h2>Bleeding</h2>
+                <p>Apply direct pressure on the wound using a clean cloth to stop the bleeding. Elevate the injured part above heart level if possible.</p>
+                
+            </div>
+        </div>
+        <div class="content-wrapper right">
+            <div class="image-wrapper"><img src="index images/burns.jpg" alt="Burns"></div>
+            <div class="text-wrapper">
+                <h2>Burns</h2>
+                <p>Cool the burn under cool running water for at least 10 minutes. Do NOT apply ice or butter. Cover with a clean cloth or dressing.</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+</script>
+</html>

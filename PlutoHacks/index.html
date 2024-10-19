@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
+    <header>
+        <h1>DisasterShield</h1>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="index.html">Disasters</a></li>
+                <li><a href="faindex.html">First Aid Techniques</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="content-container">
         <div class="content-wrapper left">
             <div class="image-wrapper"><img src="index images/tornado rubble.jpg" alt="Tornado Rubble"></div>
@@ -25,7 +35,7 @@
             </div>
         </div>
         <div class="content-wrapper left">
-            <div class="image-wrapper"><img src="image3.jpg" alt="Hurricane Image"></div>
+            <div class="image-wrapper"><img src="index images/hurricane.jpg" alt="Hurricane Image"></div>
             <div class="text-wrapper">
                 <h2>Hurricanes</h2>
                 <p>Hurricanes are large, powerful storms that form over warm ocean waters and can cause significant wind, rain, and flood damage when they make landfall. Evacuate Area If Possible!</p>
@@ -34,5 +44,14 @@
         </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+</script>
 </html>
