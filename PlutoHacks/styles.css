@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
-    background-color: #f4f4f9;
+    background: linear-gradient(to bottom right, rgb(73, 245, 73), lightblue);
 }
 
 .image-container {
@@ -10,19 +10,27 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    min-height: 50vh; /* Ensures it's half a scroll length */
+    min-height: 50vh;
 }
 
 .placeholder {
-    width: 80%;
-    height: 200px;
+    width: 400px; 
+    height: 400px;
     margin: 10px;
-    background-color: #000; /* Black background */
+    background-color: #000; 
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
+}
+
+.placeholder.left {
+    align-self: flex-start;
+}
+
+.placeholder.right {
+    align-self: flex-end;
 }
 
 .button-container {
